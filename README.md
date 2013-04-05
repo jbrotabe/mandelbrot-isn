@@ -1,4 +1,4 @@
-MADLEBROT-ISN-project-
-======================
+MADLEBROT-ISN-project
+=====================
 
 MANDLEBROT/FRACTALS wallpaper web generator
