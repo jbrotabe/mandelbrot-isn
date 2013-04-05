@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
@@ -20,3 +20,28 @@
 		<h1>
 			Mandlebrot/Fractal wallpaper web generator <!-- Titre 1 -->
 		</h1>
+		
+		<div id="navigation">
+				<!-- Liste des liens du menu -->
+				<ul><a href="#generator">Wallpaper Generator</a></ul>  
+				<ul><a href="#history">About Mandlebrot</a></ul>
+				<ul><a href="#forum">Share YOUR place!</a></ul>
+				<ul><a href="#credits">Credits</a></ul>
+				
+				</div>
+				
+		<div id="history">
+			The Mandelbrot set has its place in complex dynamics, a field first investigated by the French mathematicians Pierre Fatou and Gaston Julia at the beginning of the 20th century. The first pictures of this fractal were drawn in 1978 by Robert W. Brooks and Peter Matelski as part of a study of Kleinian groups. On 1 March 1980, at IBM's Thomas J. Watson Research Center in upstate New York, Benoit Mandelbrot first saw a visualization of the set.
+Mandelbrot studied the parameter space of quadratic polynomials in an article that appeared in 1980. The mathematical study of the Mandelbrot set really began with work by the mathematicians Adrien Douady and John H. Hubbard, who established many of its fundamental properties and named the set in honour of Mandelbrot.
+The mathematicians Heinz-Otto Peitgen and Peter Richter became well known for promoting the set with photographs, books, and an internationally touring exhibit of the German Goethe-Institut.
+The cover article of the August 1985 Scientific American introduced the algorithm for computing the Mandelbrot set to a wide audience. The cover featured an image created by Peitgen, et al.
+The work of Douady and Hubbard coincided with a huge increase in interest in complex dynamics and abstract mathematics, and the study of the Mandelbrot set has been a centerpiece of this field ever since. An exhaustive list of all the mathematicians who have contributed to the understanding of this set since then is beyond the scope of this article, but such a list would notably include Mikhail Lyubich, Curt McMullen, John Milnor, Mitsuhiro Shishikura, and Jean-Christophe Yoccoz.
+		</div>
+		
+		<div id="credits">
+		Developed by:
+		<ul>-Jean-Baptiste Buisson</ul>
+		<ul>-Robin Nonon-Latapie</ul>
+	
+        <ul>Special thanks to Mme Jauribery and M. Denis-Remis.</ul>  		
+		</div>
