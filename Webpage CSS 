@@ -1,0 +1,129 @@
+html {
+	font-size: 100%; 
+}
+body{
+	background-image: url("mandlebrotwallpaper.jpg"); /*Definition du fond d'ecran*/
+  	
+	background-size: 100%;
+
+	background-attachment:fixed; /*Fixation du fond d'ecran pour qu'il ne bouge pas quand on "scroll"*/ 
+	
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /*Definition du style de texte*/
+	
+	font-size: .8em; /*Definition de la taille du texte*/
+	
+	color: red; /*Definition de la couleur du texte: noir*/
+}
+
+h1{ /*Le titre*/
+
+    text-align: center; /*Alignement du titre au centre*/
+	
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif; /*Definition du style du titre*/
+
+	font-weight: normal; /* Definition de l'eppaisseur du titre*/
+	
+	font-size: 3.2em; /*Definition de la taille du titre*/ 
+
+	font-style: italic; /*Mise en Italique du titre*/
+
+	color: black; /*Couleur du titre: crimson (nuance de rouge) */
+
+	background-image: url('red.jpg'); /*Definition de l'image de fond du titre*/
+
+	background-repeat:no-repeat; /*L'image de fond ne se repete pas*/
+
+	background-position:center top; /*Positionnement de l'image de fond*/
+
+	margin-top: 20px; /*Definition de la marge en haut*/
+}
+#navigation{ /*Menu*/
+	
+	position:fixed; /*Fixation du menu pour qu'il ne bouge pas quand on "scroll"*/
+
+	font-size: 1.3em; /*Definition de la taille du texte du menu*/
+
+    right:800px; /*Positionnement du menu par rapport au cote droit*/
+
+	left:10px; /*Positionnement du menu par rapport au cote gauche*/
+
+	height: 70px; /*Definition de la hauteur du menu*/ 	
+
+    width: 250px; /*Definition de la largeur du menu*/
+	
+}
+#navigation ul{ /*Liste du menu*/
+
+	background-color: rgba(150, 000, 000, 0.5); /*Definition de la couleur du fond*/
+
+	border-style: outset; /*Definition du style de bordure*/
+	
+	border-width: 2px; /*Definition de la largeur de la bordure*/
+	
+	border-color: rgb( 100, 000, 000); /*Definition de la couleur de la bordure*/
+
+}
+
+#navigation ul:hover { /*Effet lorsque l'on passe la souris sur le menu*/
+
+    background-color: rgba(100, 000, 000, 0.5); /*Changement de la couleur de fond: rouge*/
+	
+	border-style: inset; /*Changement du style de bordure*/
+	
+}
+
+#about{
+	
+	background-color: rgba(000, 000, 000, 0.6); /*Definition de la couleur de fond: noir*/
+	
+	width: 1000px; /*Definition de largeur du fond*/
+	
+	border-style:ridge; /*Definition du style de bordure*/
+	
+	border-width: 10px; /*Definition de la taille de la bordure*/
+	
+	border-color: rgb(255, 000, 000); /*Definition de la couleur de la bordure*/
+	
+	font-size: 2em; /*Definition de la taille du texte*/
+	
+	margin-top: 60px; /*Definition de la marge en haut*/
+	
+	margin-left: 350px; /*Definition de la marge a gauche*/
+	
+	text-indent:30px; /*Definition de l'indentation*/
+	
+	line-height: 200%; /*Definition de l'espace entre les lignes*/
+	
+	padding: 20px; /*Definition de la place du texte par rapport au fond*/
+	
+	padding-bottom:50px; /*Definition de la place du texte par rapport au bas du fond*/
+	
+}
+
+#history{ /*Historique*/
+
+	background-color: rgba(000, 000, 000, 0.6); /*Definition de la couleur de fond: noir*/
+	
+	width: 1000px; /*Definition de largeur du fond*/
+	
+	border-style:ridge; /*Definition du style de bordure*/
+	
+	border-width: 8px; /*Definition de la taille de la bordure*/
+	
+	border-color: rgb(100, 000, 000); /*Definition de la couleur de la bordure*/
+	
+	font-size: 1.5em; /*Definition de la taille du texte*/
+	
+	margin-top: 60px; /*Definition de la marge en haut*/
+	
+	margin-left: 350px; /*Definition de la marge a gauche*/
+	
+	text-indent:30px; /*Definition de l'indentation*/
+	
+	line-height: 200%; /*Definition de l'espace entre les lignes*/
+	
+	padding: 20px; /*Definition de la place du texte par rapport au fond*/
+	
+	padding-bottom:50px; /*Definition de la place du texte par rapport au bas du fond*/
+	
+}
