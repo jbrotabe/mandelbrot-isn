@@ -116,7 +116,7 @@ h1{ /*Le titre*/
 
 #history{ /*Historique*/
 
-	background-color: rgba(000, 000, 000, 0.6); /*Definition de la couleur de fond: noir*/
+	background-color: rgba(000, 000, 000, 0.8); /*Definition de la couleur de fond: noir*/
 	
 	width: 1000px; /*Definition de largeur du fond*/
 	
