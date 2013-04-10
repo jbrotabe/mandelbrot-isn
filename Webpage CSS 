@@ -1,8 +1,10 @@
 html {
 	font-size: 100%; 
 }
+
 body{
-	background-image: url("mandlebrotwallpaper.jpg"); /*Definition du fond d'ecran*/
+
+	background-image: url("2.gif"); /*Definition du fond d'ecran*/
   	
 	background-size: 100%;
 
@@ -16,7 +18,7 @@ body{
 }
 
 h1{ /*Le titre*/
-
+	
     text-align: center; /*Alignement du titre au centre*/
 	
 	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif; /*Definition du style du titre*/
@@ -35,9 +37,15 @@ h1{ /*Le titre*/
 
 	background-position:center top; /*Positionnement de l'image de fond*/
 
-	margin-top: 20px; /*Definition de la marge en haut*/
+	margin-top: 0px; /*Definition de la marge en haut*/
+	
+	margin-left: 300px;
 }
 #navigation{ /*Menu*/
+
+	margin-top: 0px; /*Definition de la marge en haut*/
+	
+	background-color: rgba(000, 000, 000, 0.9);
 	
 	position:fixed; /*Fixation du menu pour qu'il ne bouge pas quand on "scroll"*/
 
@@ -45,28 +53,32 @@ h1{ /*Le titre*/
 
     right:800px; /*Positionnement du menu par rapport au cote droit*/
 
-	left:10px; /*Positionnement du menu par rapport au cote gauche*/
+	left:0px; /*Positionnement du menu par rapport au cote gauche*/
 
-	height: 70px; /*Definition de la hauteur du menu*/ 	
+	height: 1000px; /*Definition de la hauteur du menu*/ 	
 
-    width: 250px; /*Definition de la largeur du menu*/
+    width: 275px; /*Definition de la largeur du menu*/
+	
 	
 }
 #navigation ul{ /*Liste du menu*/
 
-	background-color: rgba(150, 000, 000, 0.5); /*Definition de la couleur du fond*/
+	line-height: 200%; /*Definition de l'espace entre les lignes*/
+	
+	background-color: rgba(250, 000, 000, 0.8); /*Definition de la couleur du fond*/
 
 	border-style: outset; /*Definition du style de bordure*/
 	
-	border-width: 2px; /*Definition de la largeur de la bordure*/
+	border-width: 5px; /*Definition de la largeur de la bordure*/
 	
-	border-color: rgb( 100, 000, 000); /*Definition de la couleur de la bordure*/
+	border-color: rgb( 255, 000, 000); /*Definition de la couleur de la bordure*/
 
+	
 }
 
 #navigation ul:hover { /*Effet lorsque l'on passe la souris sur le menu*/
 
-    background-color: rgba(100, 000, 000, 0.5); /*Changement de la couleur de fond: rouge*/
+    background-color: rgba(200, 000, 000, 0.8); /*Changement de la couleur de fond: rouge*/
 	
 	border-style: inset; /*Changement du style de bordure*/
 	
@@ -74,7 +86,7 @@ h1{ /*Le titre*/
 
 #about{
 	
-	background-color: rgba(000, 000, 000, 0.6); /*Definition de la couleur de fond: noir*/
+	background-image: url("1.png"); /*Definition du fond d'ecran*/
 	
 	width: 1000px; /*Definition de largeur du fond*/
 	
@@ -90,13 +102,15 @@ h1{ /*Le titre*/
 	
 	margin-left: 350px; /*Definition de la marge a gauche*/
 	
-	text-indent:30px; /*Definition de l'indentation*/
+	text-indent:30px; /*Definition de l'indentation*/ 
 	
 	line-height: 200%; /*Definition de l'espace entre les lignes*/
 	
 	padding: 20px; /*Definition de la place du texte par rapport au fond*/
 	
 	padding-bottom:50px; /*Definition de la place du texte par rapport au bas du fond*/
+	
+	color: rgb(150, 000, 000)
 	
 }
 
@@ -125,5 +139,17 @@ h1{ /*Le titre*/
 	padding: 20px; /*Definition de la place du texte par rapport au fond*/
 	
 	padding-bottom:50px; /*Definition de la place du texte par rapport au bas du fond*/
+	
+}
+
+#credits{
+
+	text-align: left;
+	
+	margin-left: 1000px;
+	
+	margin-top: 30px;
+	
+	background-image: url("3.png"); /*Definition du fond d'ecran*/
 	
 }
