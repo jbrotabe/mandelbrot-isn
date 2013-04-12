@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mandelbrot</title>
+    <script src="JAVASCRIPT_ISN.js" type="text/javascript"></script>
+  </head>
+ 
+  <body onload="Mandelbrot()">
+    <h1>Mandelbrot</h1>
+ 
+    <form id="menu">
+      <p>iterations =
+        <input name="iterations" type="text" size="10" value="1000"></p>
+      <p>
+        <input type="submit" value=" Afficher ">
+        <input type="reset" value=" Reset ">
+      </p>
+    </form>
+ 
+    <canvas id="image" width="900" height="600">
+    </canvas>
+  </body>
+</html>
