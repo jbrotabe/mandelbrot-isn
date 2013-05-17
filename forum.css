@@ -17,7 +17,11 @@ table{
 
 	margin-top: 200px;
 
-	margin-left: 300px;
+	margin-left: 270px;
+	
+	border-style: outset;
+	
+	border-color: rgb( 50, 100, 250);
 	
 }
 
