@@ -4,7 +4,7 @@ html {
 
 body{
 
-	background-image: url("2.gif"); /*Definition du fond d'ecran*/
+	background-image: url("background.jpg"); /*Definition du fond d'ecran*/
   	
 	background-size: 100%;
 
@@ -151,5 +151,31 @@ h1{ /*Le titre*/
 	margin-top: 30px;
 	
 	background-image: url("3.png"); /*Definition du fond d'ecran*/
+	
+}
+#fr{
+
+	background-image: url("fr.jpg");
+	
+	position: fixed;
+	
+	margin-top: 400px;
+	
+	margin-left: 30px;
+	
+	background-repeat: no-repeat; /*L'image de fond ne se repete pas*/
+
+}
+#en{
+
+	background-image: url("en.png"); 
+
+	position: fixed;
+	
+	margin-top: 400px;
+	
+	margin-left: 120px;
+	
+	background-repeat: no-repeat; /*L'image de fond ne se repete pas*/
 	
 }
