@@ -14,6 +14,8 @@ function Mandeliter(cx, cy, maxiter)
  
 function Mandelbrot()
 {
+  var ix;
+  var iy;  
   var width = 900;
   var height = 600;
   var cd = document.getElementById('calcdata');
@@ -25,12 +27,13 @@ function Mandelbrot()
   var ctx = document.getElementById('mandelimage').getContext("2d");
   var img = ctx.getImageData(0, 0, width, height);
   var pix = img.data;
-  for (var ix = 0; ix < width; ++ix)
-    for (var iy = 0; iy < height; ++iy)
+  for ( ix = 0; ix < width; ++ix)
+  {
+    for ( iy = 0; iy < height; ++iy)
     {
-      var x = xmin + (xmax-xmin)*ix/(width-1);
-      var y = ymin + (ymax-ymin)*iy/(height-1);
-      var i = Mandeliter(x, y, iterations);
+       x = xmin + (xmax-xmin)*ix/(width-1);
+       y = ymin + (ymax-ymin)*iy/(height-1);
+       i = Mandeliter(x, y, iterations);
       var ppos = 4*(900*iy + ix);
       if (i == iterations)
       {
@@ -61,6 +64,7 @@ function Mandelbrot()
         }
       }
       pix[ppos+3] = 255;
-    }
+     }
+  }
   ctx.putImageData(img,0,0);
 }
