@@ -1,0 +1,29 @@
+html {
+  font-size: 100%; 
+}
+body{ /*corps de la page */
+	background-image: url("background.jpg"); 
+  	
+	background-size: 100%;
+
+	background-attachment:fixed; 
+	
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; 
+	
+	font-size: 2em; 
+	
+	color: red; 
+}
+h1{ /*Le titre*/
+
+	text-align: center; 
+
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif; 
+
+	font-weight: normal; 
+
+	font-size: 2.5em; 
+
+	color: crimson; 
+
+}
