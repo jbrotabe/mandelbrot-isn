@@ -1,5 +1,5 @@
 html {
-  font-size: 100%; 
+	font-size: 100%; 
 }
 body{ /*corps de la page */
 	background-image: url("background.jpg"); 
@@ -10,9 +10,6 @@ body{ /*corps de la page */
 	
 	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; 
 	
-	font-size: 2em; 
-	
-	color: red; 
 }
 h1{ /*Le titre*/
 
@@ -22,8 +19,24 @@ h1{ /*Le titre*/
 
 	font-weight: normal; 
 
-	font-size: 2.5em; 
+	font-size: 4em; 
 
-	color: crimson; 
+	color: rgba(10, 130, 255, 0.6); 
+	
+	font-style: italic;
+
+}
+
+p{
+
+	font-size: 2em; 
+	
+	text-align: left; 
+	
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif; 
+	
+	margin-left: 50px;
+	
+	color: rgba(255, 20, 20, 1); 
 
 }
