@@ -1,4 +1,4 @@
-unction Mandeliter(cx, cy, maxiter)
+function Mandeliter(cx, cy, maxiter)
 {
   var i;
   var x = 0.0;
