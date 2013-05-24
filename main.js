@@ -1,4 +1,4 @@
-function Mandeliter(cx, cy, maxiter)
+function Mandelbrot_iter(cx, cy, maxiter)
 {
   var i;
   var x = 0.0;
@@ -14,57 +14,58 @@ function Mandeliter(cx, cy, maxiter)
  
 function Mandelbrot()
 {
-  var ix;
-  var iy;  
   var width = 900;
   var height = 600;
-  var cd = document.getElementById('calcdata');
-  var xmin = parseFloat(cd.xmin.value);
-  var xmax = parseFloat(cd.xmax.value);
-  var ymin = parseFloat(cd.ymin.value);
-  var ymax = parseFloat(cd.ymax.value);
+  var cd = document.getElementById('menu');
+  var xmin = -2;
+  var xmax = 1;
+  var ymin = -1;
+  var ymax = 1;
+ 
+
   var iterations = parseInt(cd.iterations.value);
-  var ctx = document.getElementById('mandelimage').getContext("2d");
+  var ctx = document.getElementById('image').getContext("2d");
   var img = ctx.getImageData(0, 0, width, height);
   var pix = img.data;
-  for ( ix = 0; ix < width; ++ix)
-  {
-    for ( iy = 0; iy < height; ++iy)
+  for ( var ix = 0;ix < width; ++ix){
+    for (  var iy = 0; iy < height; ++iy)
     {
-       x = xmin + (xmax-xmin)*ix/(width-1);
-       y = ymin + (ymax-ymin)*iy/(height-1);
-       i = Mandeliter(x, y, iterations);
+      var x = xmin + (xmax-xmin)*ix/(width-1);
+      var y = ymin + (ymax-ymin)*iy/(height-1);
+      var i = Mandelbrot_iter(x, y, iterations);
       var ppos = 4*(900*iy + ix);
       if (i == iterations)
       {
+    // interieur
         pix[ppos] = 0;
         pix[ppos+1] = 0;
         pix[ppos+2] = 0;
       }
       else
       {
-        var c = 3*Math.log(i)/Math.log(iterations - 1.0);
+        var c = 3*Math.log(i)/Math.log(iterations - 0);
         if (c < 1)
-        {
-          pix[ppos] = 255*c;
+        { // exterieur
+          pix[ppos] = 0.5*200*(1-c);
           pix[ppos+1] = 0;
           pix[ppos+2] = 0;
         }
         else if (c < 2)
-        {
-          pix[ppos] = 255;
-          pix[ppos+1] = 255*(c-1);
-          pix[ppos+2] = 0;
+        {//bord
+          pix[ppos] =255*(c-1);
+          pix[ppos+1] = 0*(c-1);
+          pix[ppos+2] = 0*(c-1);
         }
         else
-        {
+        {// ptit trait
           pix[ppos] = 255;
           pix[ppos+1] = 255;
           pix[ppos+2] = 255*(c-2);
         }
       }
-      pix[ppos+3] = 255;
-     }
-  }
+      pix[ppos+3] = 255;//opacité
+    }
   ctx.putImageData(img,0,0);
+  }
 }
+
