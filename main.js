@@ -3,7 +3,7 @@ function Mandelbrot_iter(cx, cy, maxiter)
   var i;
   var x = 0.0;
   var y = 0.0;
-  for (i = 0; i < maxiter && x*x + y*y <= 10000; ++i)
+  for (i = 0; i < maxiter && x*x + y*y <= 4; ++i)
   {
     var tmp = 2*x*y;
     x = x*x - y*y + cx;
