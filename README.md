@@ -1,4 +1,4 @@
-MANDLEBROT-ISN-project
+MANDELBROT-ISN
 =====================
 
-MANDLEBROT/FRACTALS wallpaper web generator
+MANDELBROT/FRACTALS wallpaper web generator
