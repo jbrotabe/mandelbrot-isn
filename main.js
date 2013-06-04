@@ -1,12 +1,15 @@
-	function Mandelbrot(){			
+	function Mandelbrot(){	
+		//var xmin = document.getElementById("xmin");
+		//var ymin = document.getElementById("ymin");
+		//var xmax = document.getElementById("xmax");
+		//var ymax = document.getElementById("ymax");
+		var xmin= -2;var xmax= 1; var ymin=-1; var ymax= 1;
 		var canvas = document.getElementById('canvas');
 		var context = canvas.getContext('2d');
 		var xr = context.canvas.width;
 		var yr = context.canvas.height;
 		var image = context.createImageData(xr, yr);
 		var pix = image.data;
-		var xmin = -2; var xmax = 1;
-		var ymin = -1; var ymax = 1;
 		var r0 = 0; var v0 = 0; var b0 = 0;	
 		while(r0 == v0 || r0 == b0 || v0 == b0) 
 			{
@@ -50,3 +53,13 @@
 	context.putImageData(image, 0, 0);
 	
 	}
+	//Zoom
+	//document.getElementById('canvas').onclick = 
+	function zoom(){
+	var oxmin=xmin;
+	var oxmax=xmax;
+	var oymin=ymin;
+	var oymax=ymax;
+	alert(oxmin)
+	}
+	
