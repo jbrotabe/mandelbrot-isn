@@ -1,3 +1,4 @@
+	
 	var xmin=-2.0;var xmax=1.0; var ymin=-1.0; var ymax=1.0;
 	var vzoom=1;var iterations;//iterations max
 	function Mandelbrot(){	
@@ -13,6 +14,14 @@
 		var zx2 = 0.0; var zy2 = 0.0;
 		var ivzoom=vzoom;
 		vzoom=ivzoom/2;
+		var r0 = 0; var v0 = 0; var b0 = 0;  
+    			while(r0 == v0 || r0 == b0 || v0 == b0) 
+     			 	{
+      					r0 = Math.pow(2, Math.ceil(Math.random() * 3 + 3));
+      					v0 = Math.pow(2, Math.ceil(Math.random() * 3 + 3));
+      					b0 = Math.pow(2, Math.ceil(Math.random() * 3 + 3)); 
+     			 	} 
+				var r1 = 256 / r0; var v1 = 256 / v0; var b1 = 256 / b0; 
 		//on travail pour chaque pixel
 		for (var ky = 0; ky < hauteur; ky++)//variable hauteur
 		{
@@ -31,7 +40,8 @@
 					zy = 2 * zx * zy + y;
 					zx = zx0;
 				}
-				//on color:en noir quand elle converge et puis en fonction de la rapidité de la divergence
+				
+					//on colore : en noir quand elle converge et puis en fonction de la rapidité de la divergence
 				var p = (largeur * ky + kx) * 4;
 				if (i==iterations){			
 					pix[p] = 0;   
@@ -39,37 +49,16 @@
 					pix[p + 2] = 0; 
 			
 				}
-				else{	
-					//formule empirique			
-					var c = 3*Math.log(i)/Math.log(iterations);
-					if (c < 1)
-					{
-						pix[p] = 0*c;
-						pix[p+1] = 0;
-						pix[p+2] = 0;
-				
-					}
-					else if (c < 2)
-					{
-						pix[p] = 0;
-						pix[p+1] = 255*(c-1);
-						pix[p+2] = 0;
-					
-					}
-					else
-					{
-						pix[p] = 255;
-						pix[p+1] = 0;
-						pix[p+2] = 255*(c-1);
-					
-					}	
-					
-				
+				else{			
+       			pix[p] = i % r0 * r1;    //formule empirique trouvé(possible explication mais pas trouvé)
+      			pix[p + 1] = i % v0 * v1; 
+       			pix[p + 2] = i % b0 * b1; 
+ 
 				}
 				pix[p + 3] = 255;
-			}
-		context.putImageData(image, 0, 0);
 		}
+	context.putImageData(image, 0, 0);
+}
 	}
 	//Zoom
 	function zoom(event){
