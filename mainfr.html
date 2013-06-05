@@ -1,28 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>Mandelbrot</title>
+    <title>Generateur de la fractale de Mandelbrot</title>
     <script src="main.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="main.css" media="all" /> <!-- Definition du CSS a appliquer a la page html -->
+    <link rel="stylesheet" type="text/css" href="main.css" media="all" /> <!-- Definition du CSS a appliquer a la page html -->
   </head>
  
   <body onload="Mandelbrot()">
-    <h1>Mandelbrot</h1>
+    <h1>Generateur de la fractale de Mandelbrot</h1>
  
     <form id="menu" >
       <p>iterations =
-		<input id="Iterations" type="text" size="10" value="256" /><input type="button" value="envoyer" onclick="Mandelbrot()">
+		<input id="iterations" type="text" size="10" value="256" /><input type="button" value="envoyer" onclick="Mandelbrot()">
       <p>
         <input type="button" value="Afficher/Cacher" onclick="afficher(this,'Afficher');">
 		<input type="button" value="Redessiner" onclick="ref()">
-		
+
       </p>
    
 	</form>
 	<div id="Afficher" style="display:none;" >
 	<canvas id="canvas" width="900" height="600" onclick="zoom(event)"> </canvas>
-		
+
 	</div> 
-	
+
   </body>
 </html>
