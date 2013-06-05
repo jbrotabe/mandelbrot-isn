@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>Mandelbrot Fractal Generator</title>
+    <title>Mandelbrot</title>
     <script src="main.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="main.css" media="all" /> <!-- Definition du CSS a appliquer a la page html -->
   </head>
  
   <body onload="Mandelbrot()">
-    <h1>Mandelbrot Fractal Generator</h1>
+    <h1>Mandelbrot</h1>
  
     <form id="menu" >
-      <p>Iterations =
-        <!-- <input name="iterations" type="text" size="10" value="1000"></p> -->
-  	<input name="iterations" type="number" size="10" value="1000" />
-		
+      <p>iterations =
+		<input id="iterations" type="text" size="10" value="256" /><input type="button" value="envoyer" onclick="Mandelbrot()">
       <p>
-        <input type="button" value="DisplayHide">
-		<input type="submit" value="Send">
-        <input type="reset" value=" Reset ">
+        <input type="button" value="Afficher/Cacher" onclick="afficher(this,'Afficher');">
+		<input type="button" value="Redéssiner" onclick="ref()">
+		
       </p>
    
- 
-   <div id="Afficher" ><canvas id="canvas" width="900" height="600"> </canvas></div> 
 	</form>
+	<div id="Afficher" style="display:none;" >
+	<canvas id="canvas" width="900" height="600" onclick="zoom(event)"> </canvas>
+		
+	</div> 
+	
   </body>
 </html>
