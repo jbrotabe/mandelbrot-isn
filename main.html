@@ -13,16 +13,16 @@
       <p>iterations =
 		<input id="iterations" type="text" size="10" value="256" /><input type="button" value="envoyer" onclick="Mandelbrot()">
       <p>
-        <input type="button" value="Afficher/Cacher" onclick="afficher(this,'Afficher');">
-		<input type="button" value="Redéssiner" onclick="ref()">
-		
+        <input type="button" value="Display/Hide" onclick="afficher(this,'Afficher');">
+		<input type="button" value="Redraw" onclick="ref()">
+
       </p>
    
 	</form>
 	<div id="Afficher" style="display:none;" >
 	<canvas id="canvas" width="900" height="600" onclick="zoom(event)"> </canvas>
-		
+
 	</div> 
-	
+
   </body>
 </html>
